@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 import pickle
 import numpy as np
 from sklearn.naive_bayes import GaussianNB
-# from sklearn.svm import SVC
+from sklearn.svm import SVC
 
 df = pd.read_csv("data/train.csv")
 X = df.drop(columns=['Disease']).to_numpy()
